@@ -67,21 +67,21 @@ export const columns = (onEdit: any, onDelete: any) => [
     },
   },
   {
-    key: "ongoing_illness",
-    title: "Ongoing Illness",
-    align: "center",
-    dataIndex: "ongoing_illness",
-    render: (ongoing_illness: any) => (
-      <StyledText className="m-0">{presence(ongoing_illness)}</StyledText>
-    ),
-  },
-  {
     key: "blood_group",
     title: "Blood Group",
     align: "center",
     dataIndex: "blood_group",
     render: (blood_group: any) => (
       <StyledText className="m-0">{presence(blood_group)}</StyledText>
+    ),
+  },
+  {
+    key: "ongoing_illness",
+    title: "Ongoing Illness",
+    align: "center",
+    dataIndex: "ongoing_illness",
+    render: (ongoing_illness: any) => (
+      <StyledText className="m-0">{presence(ongoing_illness)}</StyledText>
     ),
   },
   {
