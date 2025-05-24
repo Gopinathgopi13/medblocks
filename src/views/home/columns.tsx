@@ -55,15 +55,14 @@ export const columns = (onEdit: any, onDelete: any) => [
       const fullAddress = `${row.address ?? ""} ${row.city ?? ""} ${
         row.state ?? ""
       } ${row.country ?? ""} ${row.pincode ?? ""}`.trim();
-      const displayAddress =
-        fullAddress.length > 30
-          ? fullAddress.slice(0, 30) + "\n" + fullAddress.slice(30)
-          : fullAddress;
-
       return (
-        <StyledText className="m-0 whitespace-pre-line">
-          {presence(displayAddress)}
-        </StyledText>
+        <>
+          <div className="w-[200px] mx-auto">
+            <StyledText className="m-0 break-words whitespace-normal leading-tight">
+              {presence(fullAddress)}
+            </StyledText>
+          </div>
+        </>
       );
     },
   },
@@ -86,13 +85,21 @@ export const columns = (onEdit: any, onDelete: any) => [
     ),
   },
   {
-    key: "reason",
-    title: "Reason",
+    key: "problem",
+    title: "Problem",
     align: "center",
-    dataIndex: "reason",
-    render: (reason: any) => (
-      <StyledText className="m-0">{presence(reason)}</StyledText>
-    ),
+    dataIndex: "problem",
+    render: (problem: any) => {
+      return (
+        <>
+          <div className="w-[200px] mx-auto">
+            <StyledText className="m-0 break-words whitespace-normal leading-tight">
+              {presence(problem)}
+            </StyledText>
+          </div>
+        </>
+      );
+    },
   },
   {
     key: "manage",
