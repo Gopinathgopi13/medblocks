@@ -1,26 +1,33 @@
-# ⚛️ React + TypeScript + Vite Starter
+# Patient Registration App
 
-A minimal yet extensible setup using **React 18**, **TypeScript**, **Vite**, and **ESLint** for scalable web application development.
-
----
+A frontend-only patient registration app built with **React (Vite)**, **Tailwind CSS**, **TypeScript**, and **Pglite** for in-browser SQLite data storage.
 
 ## 📦 Tech Stack
 
-- **React 18** – UI library
-- **TypeScript** – Static typing
-- **Vite** – Blazing fast dev/build tool
-- **ESLint** – Linting with optional type-aware rules
-- **SWC** – Fast compilation with `@vitejs/plugin-react-swc`
+- **Frontend:** React + Vite + TypeScript
+- **Styling:** Tailwind CSS
+- **Database:** Pglite (SQLite in WebAssembly)
 
----
+## 🚀 Live Demo
 
-## 🚀 Getting Started
+> [Deployed Link](https://medblocks-gules.vercel.app/)  
 
-### 1. Clone the Repository
+## 🧰 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [Git](https://git-scm.com/)
+
+### Installation
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/Gopinathgopi13/medblocks.git
+cd medblocks
+
 npm install
+
 npm run dev
-```
+
